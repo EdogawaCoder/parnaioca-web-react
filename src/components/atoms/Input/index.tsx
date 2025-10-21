@@ -2,12 +2,7 @@
 
 import { useState } from "react";
 
-interface InputProps {
-    type: string;
-    className?: string;
-    placeholder?: string;
-    onInput:(text:string) => void;
-}
+import  { InputProps } from "./type";
 
 export default function Input({type, className = '', placeholder, onInput}:InputProps){
     

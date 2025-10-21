@@ -1,9 +1,6 @@
 'use client'
 
-interface LabelProps {
-    text: string;
-
-}
+import { LabelProps } from "./type";
 
 export default function Label({ text }: LabelProps) {
     return (
