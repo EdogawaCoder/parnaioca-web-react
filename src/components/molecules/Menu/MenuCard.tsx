@@ -10,10 +10,11 @@ interface MenuCardProps {
   icon: React.ReactElement<SvgIconComponent>;
   onClick?: () => void;
   sx?: any;
+  
 
 }
 
-export default function MenuCard({ title, icon, onClick, sx }: MenuCardProps) {
+export default function MenuCard({ title, icon, onClick, sx,  }: MenuCardProps) {
   return (
     <Card
       sx={{
@@ -29,6 +30,7 @@ export default function MenuCard({ title, icon, onClick, sx }: MenuCardProps) {
         borderRadius: 4,
         transition: '0.3s',
         '&:hover': { boxShadow: 5, transform: 'scale(1.03)' },
+        pl: 2,
       }}
     >
       <CardActionArea

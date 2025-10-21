@@ -7,11 +7,11 @@ import { Box } from '@mui/material';
 export default function Menu() {
   return (
     <Box sx={{ display: 'flex', gap: 1 , flexWrap: 'wrap' }}>
-      <MenuCard title="Dashboard" sx={{ width: 100 }} 
+      <MenuCard title="Dashboard" 
       icon={<DashboardIcon />} onClick={() => console.log('Dashboard')} />
-      <MenuCard title="Users" sx={{ width: 180 }}
+      <MenuCard title="Users" 
        icon={<PersonIcon />} onClick={() => console.log('Users')} />    
-      <MenuCard title="Logs" sx={{ width: 180 }}
+      <MenuCard title="Logs" 
        icon={<SettingsIcon />} onClick={() => console.log('Configurações')} />
     </Box>
   );
